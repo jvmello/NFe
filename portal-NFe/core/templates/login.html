@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% block title %} Login {% endblock title %}
+
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+
+{% block body %}
+    {% block content %}
+
+        <form action="{% url 'login' %}" method="post" class="form">
+            {% csrf_token %}
+            <label for="login">Login</label>
+            <input name="username" type="text" class="" placeholder="login" id="login">
+            <label for="password">Senha</label>
+            <input name="password" type="password" class="" placeholder="senha" id="password">
+
+            {% bootstrap_form form %}
+
+            {% buttons %}
+                <button type="submit" class="btn btn-primary">
+                </button>
+            {% endbuttons %}
+
+
+            <button  type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+    {% endblock content %}
+{% endblock body %}

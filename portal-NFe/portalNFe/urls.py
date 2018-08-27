@@ -20,7 +20,7 @@ from core.views import index, login, logout
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('login/', login),
-    path('logout/', logout),
-    path('dedo/', index),
+    path('login/', login, name='login'),
+    path('logout/', logout, name='logout'),
+    path('dedo/', index, name='index'),
 ]
