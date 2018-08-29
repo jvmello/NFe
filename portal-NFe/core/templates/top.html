@@ -1,0 +1,28 @@
+{% load static %}
+
+<!--
+<a href="{% url 'index' %}" class="navbar-brand">
+        <img align="left" src="{% static 'logo.png' %}" width="30" height="30" class="d-inline-block align-top" alt="">
+        <span class="blue"> Controle de Trabalhos </span>
+</a> -->
+
+
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand">Navbar</a>
+    <li class="nav   dropdown">
+        <a class=" dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown link
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+    </li>
+
+
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+</nav>
