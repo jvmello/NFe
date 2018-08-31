@@ -16,5 +16,8 @@ class Nota(models.Model):
 class Produto(models.Model):
     descricao = models.TextField
     
+class Mercado(models.Model):
+    nome = models.CharField(max_length=30)
+    
 # Pelo amor de Deus me deem sugestões ae tem que fazer função até pra ficar bonitinho falem o que dá pra fazer que eu vou fazendo
 # aqui eu simplesmente não tô conseguindo pensar direito aqui ok vlw
