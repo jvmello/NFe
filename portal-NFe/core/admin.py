@@ -1,3 +1,5 @@
 from django.contrib import admin
+from models import Usuario, Nota, Produto, Mercado
 
-# Register your models here.
+modelos = [Usuario, Nota, Produto, Mercado]
+admin.site.register(modelos)
